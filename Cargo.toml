@@ -3,12 +3,14 @@ name = "ms-gkdi"
 version = "0.1.0-dev"
 edition = "2021"
 rust-version = "1.74"
-description = "MS-GKDI Group Key Distribution — L0/L1/L2 seed-key tree walk + ISDKey GetKey RPC. Extracted from dpapi-ng. UNVALIDATED CRYPTO — see README, do not publish."
+authors = ["zevs"]
+description = "MS-GKDI Group Key Distribution — L0/L1/L2 seed-key tree walk + ISDKey GetKey RPC, extracted from dpapi-ng (pre-alpha, unvalidated crypto — see README, do not publish)"
 license = "MIT"
 repository = "https://github.com/icedracon/ms-gkdi"
+documentation = "https://docs.rs/ms-gkdi"
 readme = "README.md"
-keywords = ["ms-gkdi", "gkdi", "kds", "active-directory", "windows"]
-categories = ["cryptography", "parser-implementations", "os::windows-apis"]
+keywords = ["ms-gkdi", "gkdi", "laps", "active-directory", "kerberos"]
+categories = ["cryptography", "authentication", "parser-implementations", "os::windows-apis"]
 
 # Publish gate — this crate is 0.1.0-dev and MUST NOT be pushed to crates.io until
 # the KAT harness described in README lands.
